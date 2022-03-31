@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <title>24hrs Fitness</title>
+    <style type="text/css">
+        body{
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('images/newbg.png');
+    background-repeat: no-repeat;
+}
+
+.left-section {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    display: inline-block;
+    color: rgb(196, 165, 27);
+    text-align: center;
+    border: 1px solid #14ff4f;
+}
+
+.left-section img {
+    width: 80px;
+    border-radius: 30% 30%;
+    filter: invert(100%);
+    cursor: pointer;
+
+
+}
+
+.left-section div {
+    font-size: 15px;
+    background-color: black;
+    color: white
+}
+
+.mid-section {
+    display: block;
+    width: 40%;
+    margin: 22px auto;
+    border: 1px solid #14ff4f;
+    background-color: black;
+    border-radius: 24px;
+
+}
+
+.right-section {
+    position: absolute;
+    top: 24px;
+    right: 40px;
+    color: rgb(232, 248, 10);
+    text-align: center;
+}
+
+.right-section img {
+    width: 66px;
+    cursor: pointer;
+}
+
+.right-section .tooltip {
+
+    opacity: 0;
+}
+
+.right-section:hover .tooltip {
+    opacity: 1;
+    font-size: 20px;
+    color: white;
+
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+.navbar li a {
+    color: #dee3dc;
+    text-decoration: none;
+    padding: 33px 18px;
+}
+
+.navbar li a:hover{
+    color: rgb(152, 226, 149);
+    text-decoration: underline;
+}
+
+
+.container {
+    border: solid 2px green;
+    margin: 95px 175px;
+    padding: 18px 25px;
+    width: 33%;
+    border-radius: 20px;
+    background-color: rgba(5, 5, 5, 0.486);
+    color: white;
+    font-size: 18px;
+
+}
+
+.container form input {
+    text-align: center;
+    padding: 8px;
+    width: 300px;
+    margin: 6px;
+    border-radius: 18px;
+    border:2px solid green;
+}
+.container button{
+    display: block;
+    width: 33%;
+    margin: auto;
+    padding:10px;
+    border-radius: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #46a15da9;
+    color:white;
+}    
+.container button:hover{
+    color:rgba(243, 243, 243, 0.555);
+}
+
+</style>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="left-section">
+            <img src="images/gymlogo.png" alt="">
+            <div>24hour fitness</div>
+        </div>
+        <div class="mid-section">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Bmi Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <a>
+                <img src="images/whatsapp-logo-png-2259.png" alt="">
+            </a>
+            <div class="tooltip">
+                Whatsapp Now
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <h1>Enter your details for Demo..!!</h1>
+        <form action="data.php">
+            <table>
+
+                <tr>
+                    <td><input type="text" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td><input type="tel" placeholder="Mobile Number" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Email id" required></td>
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
